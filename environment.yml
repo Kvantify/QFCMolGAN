@@ -1,0 +1,27 @@
+name: qfcmolgan
+channels:
+  - rdkit
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - pennylane
+  - pytorch >= 2.0
+  - python == 3.11
+  - rdkit
+  - scipy
+  - scikit-learn
+  - torchvision
+  # dev tools
+  - wandb
+  - black
+  - mypy
+  # pip
+  - pip
+  - pip: # Installs from PYPI
+      - pysmiles
+      - frechetdist
+    # - pennylane-rigetti
